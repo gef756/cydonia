@@ -1,0 +1,51 @@
+# .gitignore file for python
+# 
+
+# Python Compiled Files
+*.py[cod]
+
+# C Extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+developer-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Local Settings
+local_settings.py
+
+# Databases
+*.sqlite3
+
+# Vim Swap Files
+*.swp
+
+# VirtualEnv
+venv

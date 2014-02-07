@@ -1,0 +1,1 @@
+/home/gabe/dev/cydonia/manage.py
