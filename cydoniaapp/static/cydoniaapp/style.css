@@ -1,11 +1,191 @@
+/* CSS for Cydonia */
+
+
 body {
-  background: #005;
+  background: #3c4d7e url('Logo_Owl_Gray_100pxw.png') repeat;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+div#container {
+  background: white;
+  margin: 20px;
+  border: 5px solid #0153a6;
+  padding: 10px;
 }
 
 h1 {
-  color: #eee;
+  color: black;
 }
 
-p {
-  font-family: "Verdana";
+#matrix {
+  clear: both;
+  margin-top: 1em;
+}
+
+#matrix table {
+  border-collapse: collapse;
+  font-size: 88%;
+}
+
+#matrix td {
+  padding: 2px;
+}
+
+#matrix .student_name{
+  padding: 0px 10px;
+
+}
+#matrix td.homework, #matrix .homework div{
+  background: #cceaf2;
+  text-align: center;
+} 
+
+#matrix td.quiz, #matrix .quiz div {
+  background: #f6ebff;
+  text-align: center;
+}
+
+#matrix td.total, #matrix .total div {
+  font-weight: bold;
+  background: #ddd;
+  text-align: center;
+}
+
+#matrix .status_circle {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #0153a6;
+}
+
+#matrix .amber {
+  background: #ed9d25;
+}
+
+#matrix .red {
+  background: #c80202;
+}
+
+#matrix .green {
+  background: #3d850d;
+}
+
+#matrix .score_green {
+  color: #3d850d;
+}
+
+#matrix .score_lime {
+  color: #d5ed0c;
+}
+
+#matrix .score_amber {
+  color: #ed9d25;
+}
+
+#matrix .score_red {
+  color: #c80202;
+}
+
+#matrix .score_normal {
+  color: black;
+}
+
+#matrix th {
+  vertical-align: bottom;
+  padding-right: 5px; 
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#matrix th.assignment{
+  height: 80px;
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  position: relative;
+  vertical-align: bottom;
+  padding: 0;
+  line-height: .8;
+}
+
+#matrix th.assignment > div{
+  position: relative;
+  top: 0px;
+  left: 40px; /* hiehgt * tan(theta) / 2 */
+  height: 100%;
+
+  -ms-transform: skew(-45deg, 0deg);
+  -moz-transform: skew(-45deg, 0deg);
+  -webkit-transform: skew(-45deg, 0deg);
+  -o-transform: skew(-45deg, 0deg);
+  transform: skew(-45deg, 0deg);
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+#matrix th.assignment > div > span {
+  -ms-transform: skew(45deg, 0deg) rotate(315deg);
+  -moz-transform: skew(45deg, 0deg) rotate(315deg);
+  -webkit-transform: skew(45deg, 0deg) rotate(315deg);
+  -o-transform: skew(45deg, 0deg) rotate(315deg);
+  transform: skew(45deg, 0deg) rotate(315deg);
+
+  position: absolute;
+  bottom: 30px; /* width*cos(theta) */
+  left: -17px;
+  display: inline-block;
+  width: 85px; /* height / cos(theta) - width * cos(theta) */
+  text-align: left;
+}
+
+/* Give some extra padding to headers after rotated ones */
+#matrix th.assignment + th:not(.assignment) {
+  padding-left: 25px;
+}
+
+/* Gradebook controls and nav control */
+div#gradebook_controls {
+  
+}
+
+/* View controls to switch units */
+div#gradebook_controls #view_controls{
+  float: right;
+  font-size: 70%;
+  padding: 2px;
+}
+
+/* Scheme of selected buttons  */
+div#gradebook_controls .ui-state-active{
+  background: #0153a6;
+  color: white;
+}
+
+div#gradebook_controls #search_bar .search_input {
+  margin: 0;
+  padding: 5px 15px;
+  border: 1px solid #0153a6;
+  border-top-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+  font-size: 80%;
+  outline: none;
+  height: 16px;
+}
+
+div#gradebook_controls #search_bar .search_button {
+  margin: 0;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #0153a6;
+  border-right: 0;
+  background: #0153a6;
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  font-size: 80%;
+  height: 28px;
 }

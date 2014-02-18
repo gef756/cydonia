@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Grade Book</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jquery-ui-1.10.4/themes/base/jquery-ui.css">
+
+
+<div id="container">
+  <header>
+    <h1>Grade Book</h1>
+  </header>
+
+  <div id="gradebook_controls">
+    <div id="view_controls">
+      <form>
+        <div id="view_units">
+          <input type="radio" id="view_by_percent" name="view_units"><label for="view_by_percent">%</label>
+          <input type="radio" id="view_by_raw" name="view_units"><label for="view_by_raw">Raw</label>
+          <input type="radio" id="view_by_xp" checked="checked" name="view_units"><label for="view_by_xp">APoints</label>
+        </div>
+      </form>
+    </div>
+    <div id="search_bar">
+      <form>
+        <input type="text" class="search_input" name="query" placeholder="Search assignments"><input type="submit" value="Search" class="search_button">
+      </form>
+    </div>
+  </div>
+  
+  <div id="matrix">
+    <table>
+        <tr>
+          <th colspan="2"><div><span>Student</span></div>
+          <th class="assignment homework"><div><span>Homework 4</span></div>
+          <th class="assignment homework"><div><span>Homework 5</span></div>
+          <th class="assignment quiz"><div><span>Quiz 2</span></div>
+          <th class="assignment homework"><div><span>Homework 6</span></div>
+          <th class="total">Total Score
+        <tr>
+          <td><div class="status_circle amber"></div>
+          <td class="student_name">Harkness, Jack
+          <td class="score_green homework">20 AP
+          <td class="score_normal homework">21 AP
+          <td class="score_normal quiz">214 AP
+          <td class="score_amber homework">18 AP
+          <td class="score_normal total">272 AP
+        <tr>
+          <td><div class="status_circle red"></div>
+          <td class="student_name">Jones, Martha
+          <td class="score_green homework">22 AP
+          <td class="score_normal homework">24 AP
+          <td class="score_red quiz">150 AP
+          <td class="score_normal homework">24 AP
+          <td class="score_normal total">220 AP
+        <tr>
+          <td><div class="status_circle amber"></div>
+          <td class="student_name">Oswald, Clara
+          <td class="score_red homework">15 AP
+          <td class="score_normal homework">19 AP
+          <td class="score_amber quiz">172 AP
+          <td class="score_normal homework">19 AP
+          <td class="score_normal total">232 AP
+        <tr>
+          <td><div class="status_circle green"></div>
+          <td class="student_name">Pond, Amy
+          <td class="score_normal homework">20 AP
+          <td class="score_normal homework">24 AP
+          <td class="score_normal quiz">223 AP
+          <td class="score_red homework">22 AP
+          <td class="score_normal total">289 AP
+        <tr>
+          <td><div class="status_circle red"></div>
+          <td class="student_name">Smith, Mickey
+          <td class="score_red homework">0 AP
+          <td class="score_normal homework">16 AP
+          <td class="score_green quiz">204 AP
+          <td class="score_normal homework">18 AP
+          <td class="score_normal total">238 AP
+        <tr>
+          <td><div class="status_circle green"></div>
+          <td class="student_name">Student, Ima
+          <td class="score_normal homework">22 AP
+          <td class="score_normal homework">20 AP
+          <td class="score_normal quiz">220 AP
+          <td class="score_notmal homework">23 AP
+          <td class="score_normal total">285 AP
+        <tr>
+    </table>
+  </div>
+</div>
+
+<script src="jquery-1.11.0.min.js"></script>
+<script src="jquery-ui-1.10.4/ui/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $('#view_units').buttonset();
+  });
+</script>
