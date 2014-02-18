@@ -133,10 +133,10 @@ h1 {
   transform: skew(45deg, 0deg) rotate(315deg);
 
   position: absolute;
-  bottom: 30px; /* width*cos(theta) */
-  left: -17px;
+  bottom: 50px; /* width*cos(theta) */
+  left: -40px;
   display: inline-block;
-  width: 85px; /* height / cos(theta) - width * cos(theta) */
+  width: 138px; /* height / cos(theta) - width * cos(theta) */
   text-align: left;
 }
 
