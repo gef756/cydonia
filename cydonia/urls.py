@@ -5,9 +5,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', 'cydoniaapp.views.index', name='home'),
     url(r'^main/', include('cydoniaapp.urls')), 
     # Examples:
-    # url(r'^$', 'cydonia.views.home', name='home'),
     # url(r'^cydonia/', include('cydonia.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
