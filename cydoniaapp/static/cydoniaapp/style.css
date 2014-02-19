@@ -17,6 +17,11 @@ h1 {
   color: black;
 }
 
+h2 {
+  color: black;
+  font-size: 90%
+}
+
 #matrix {
   clear: both;
   margin-top: 1em;
@@ -147,14 +152,17 @@ h1 {
 
 /* Gradebook controls and nav control */
 div#gradebook_controls {
-  
+  float: right;
+  margin-bottom: 10px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 /* View controls to switch units */
 div#gradebook_controls #view_controls{
-  float: right;
   font-size: 70%;
-  padding: 2px;
+  padding: 0;
+  display:inline-block;
 }
 
 /* Scheme of selected buttons  */
@@ -163,20 +171,26 @@ div#gradebook_controls .ui-state-active{
   color: white;
 }
 
+div#gradebook_controls #search_bar{
+  display:inline-block;
+  margin-right: 15px;
+}
+
 div#gradebook_controls #search_bar .search_input {
-  margin: 0;
-  padding: 5px 15px;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
   border: 1px solid #0153a6;
   border-top-left-radius: 5px 5px;
   border-bottom-left-radius: 5px 5px;
-  font-size: 80%;
+  font-size: 70%;
   outline: none;
-  height: 16px;
+  height: 12px;
+  width: 120px;
 }
 
 div#gradebook_controls #search_bar .search_button {
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 5px;
   outline: none;
   cursor: pointer;
   text-align: center;
@@ -186,6 +200,6 @@ div#gradebook_controls #search_bar .search_button {
   background: #0153a6;
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
-  font-size: 80%;
-  height: 28px;
+  font-size: 70%;
+  height: 24px;
 }
