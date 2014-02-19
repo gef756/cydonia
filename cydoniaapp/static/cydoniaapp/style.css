@@ -189,7 +189,6 @@ div#gradebook_controls #search_bar .search_input {
   border-bottom-left-radius: 5px 5px;
   display: inline-block;
   font-size: 70%;
-  outline: none;
   height: 70%;
   width: 120px;
 }
@@ -202,8 +201,7 @@ div#gradebook_controls #search_bar .search_button {
   text-align: center;
   display: inline-block;
   color: #fff;
-  border: 1px solid #0153a6;
-  border-right: 0;
+  border: 0;
   background: #0153a6;
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
