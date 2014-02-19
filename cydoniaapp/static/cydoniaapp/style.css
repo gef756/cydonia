@@ -162,7 +162,7 @@ div#gradebook_controls {
 div#gradebook_controls #view_controls{
   font-size: 70%;
   padding: 0;
-  display:inline-block;
+  display: inline-block;
 }
 
 /* Scheme of selected buttons  */
@@ -172,8 +172,13 @@ div#gradebook_controls .ui-state-active{
 }
 
 div#gradebook_controls #search_bar{
-  display:inline-block;
+  display: inline-block;
   margin-right: 15px;
+  vertical-align: top;
+}
+
+div#gradebook_controls #search_bar form{
+  vertical-align: top;
 }
 
 div#gradebook_controls #search_bar .search_input {
@@ -182,9 +187,10 @@ div#gradebook_controls #search_bar .search_input {
   border: 1px solid #0153a6;
   border-top-left-radius: 5px 5px;
   border-bottom-left-radius: 5px 5px;
+  display: inline-block;
   font-size: 70%;
   outline: none;
-  height: 12px;
+  height: 70%;
   width: 120px;
 }
 
@@ -194,6 +200,7 @@ div#gradebook_controls #search_bar .search_button {
   outline: none;
   cursor: pointer;
   text-align: center;
+  display: inline-block;
   color: #fff;
   border: 1px solid #0153a6;
   border-right: 0;
@@ -201,5 +208,5 @@ div#gradebook_controls #search_bar .search_button {
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
   font-size: 70%;
-  height: 24px;
+  height: 70%;
 }
