@@ -208,3 +208,10 @@ div#gradebook_controls #search_bar .search_button {
   font-size: 70%;
   height: 70%;
 }
+
+.form_errors {
+  background: #fcc;
+  color: #b00;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<title>{% block title %}Hello world {% endblock %}</title>
+<link rel="stylesheet" href="{% static "cydoniaapp/style.css" %}">
+
+<div id="container">
+  {% block container %}
+  <h1>Cydonia Application</h1>
+  <p>Hello world!
+  {% endblock %}
+</div>
+<script src="{% static "cydoniaapp/jquery-1.11.0.min.js" %}"></script>
+{% block scripts %}{% endblock %}

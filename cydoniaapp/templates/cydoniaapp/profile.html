@@ -1,0 +1,7 @@
+{% extends "cydoniaapp/base.html" %}
+{% block title %}Cydonia - My Profile{% endblock %}
+{% block container %}
+  <h1>Cydonia Application</h1>
+  <p>Hello, {{ user.username }}.
+  <p><a href={% url 'logout' %}>Log out</a>
+{% endblock %}
