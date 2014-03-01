@@ -1,0 +1,32 @@
+{% extends "cydoniaapp/base.html" %}
+
+{% block title %}Cydonia - Login{% endblock %}
+
+{% block container %}
+
+<h1>Welcome to Cydonia!</h1>
+
+{% if form.errors %}
+<p class="form_errors">Your username and password didn't match. Please try again.
+{% endif %}
+
+<p>Please log in below.
+
+<form method="post" action ="{% url 'django.contrib.auth.views.login' %}">
+  {% csrf_token %}
+  <table>
+    <tr>
+      <td>{{ form.username.label_tag }}
+      <td>{{ form.username }}
+    </tr>
+    <tr>
+      <td>{{ form.password.label_tag }}
+      <td>{{ form.password }}
+    </tr>
+  </table>
+
+  <input type="submit" value="login">
+  <input type="hidden" name="next" value="{{ next }}">
+</form>
+
+{% endblock %}

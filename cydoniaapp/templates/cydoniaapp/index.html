@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<title>Hello world</title>
-{% load staticfiles %}
-<link rel="stylesheet" href="{% static "cydoniaapp/style.css" %}">
-
-<div id="container">
+{% extends "cydoniaapp/base.html" %}
+{% block title %}Hello world{% endblock %}
+{% block container %}
   <h1>Cydonia Application</h1>
   <p>Hello world!
-</div>
-<script src="{% static "cydoniaapp/jquery-1.11.0.min.js" %}"></script>
+  <p>Please <a href="{% url 'login' %}">log in</a>.
+{% endblock %}

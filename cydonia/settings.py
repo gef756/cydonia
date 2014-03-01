@@ -166,6 +166,11 @@ LOGGING = {
     }
 }
 
+# Login Settings
+LOGIN_REDIRECT_URL = 'cydoniaapp.views.profile'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+
 # Import settings from local_settings.py
 try:
     from local_settings import *
